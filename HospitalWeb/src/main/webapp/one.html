@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>patients page</title>
+	</head>
+	<body>
+		<form action="/HospitalWeb/patient" method="post">
+			<input type="number" name="id" placeholder="enter the id"> <br/><br/>
+			<input type="text" name="name" placeholder="enter your name"> <br/><br/>
+			<input type="radio" name="gender" vlaue="male"> Male
+			<input type="radio" name="gender" value="famale"> Female <br/>
+			<select name="disease">
+				<option value="select disease">Select Disease</option>
+				<option value="fever"> Fever</option>
+				<option value="headache"> Headache</option>
+				<option  value="stomach upset">Stomach problems</option>
+                <option value="motions"> Motions</option>
+                <option value="injuries"> Injuries</option>				
+			</select>
+			<textarea name="history" cols="30" rows="15" placeholder="enter history"></textarea><br/><br/><br><br>
+			
+			<input type="submit" value="add"/>
+			<input type="reset" value="clear"/>
+				
+		</form>
+	</body>
+</html>
